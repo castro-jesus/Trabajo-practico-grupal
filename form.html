@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+
+
+
+
+
+    <title>Formulario</title>
+</head>
+<h1>Formulario de Adopción</h1>
+</head>
+<form>
+    <fieldset>
+        <h2><b>Información personal</b> </h2>
+        <label for="firstname">Nombre: </label>
+        <input size="30" type="text" id="name" name="firstname" placeholder="Ingrese su nombre aqui...">
+        <br>
+        <label for="lastname">Apellido:</label>
+        <input size="30" type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido aqui...">
+        <br>
+        <label for="street">Direccion:</label>
+        <input type="text" id="street" name="address" placeholder="Ingrese su dirección aqui...">
+        <br>
+        <label for="city">Ciudad:</label><br>
+        <input type="text" id="city" name="city" placeholder="Ingrese su ciudad aqui...">
+        <br>
+        <label for="phone">Telefono: </label>
+        <input type="tel" id="phone" name="phone" placeholder="Ingrese su teléfono aqui ....">
+        <br>
+        <label for="email">Correo electrónico: </label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su correo aqui ....">
+        <br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+
+        <h2><b>Cuestionario</b></h2>
+        <ul>
+            <li>
+                <p><label for="pregunta1">¿Qué tipo de animal querés adoptar?:</label>
+            </li>
+            <input size="20" type="text" name="pregunta1">
+            </p>
+            <li><label for="pregunta2">¿El animal que va a adoptar es para usted o para un tercero?</label></li>
+            <br> <textarea name="pregunta2" rows="3" cols="90"></textarea>
+            <br>
+            <li>
+                <p><label for="pregunta3">¿Cuántas personas habitan en el hogar? ¿Cuáles son sus edades? ¿ Cual es su
+                        parentesco / vinculo ?</label>
+            </li>
+            <textarea name="pregunta3" rows="3" cols="90"></textarea>
+            </p>
+            <li>
+                <p> ¿Están todos los miembros de la familia de acuerdo en adoptar?
+            </li>
+            <input type="radio" name="option1" value="Si"> Sí
+            <input type="radio" name="option1" value="No"> No
+            </p>
+
+            <li>
+                <p> ¿Hay otros animales en la casa?
+            </li>
+            <input type="radio" name="option2" value="Si"> Sí
+            <input type="radio" name="option2" value="No"> No
+            </p>
+
+            <li><label for="tipodemascota">En caso de respuesta afirmativa especificar: </label></li>
+            <input size="60" type="text" name="tipodemascota">
+
+            <li>
+                <p>¿Conoce los gastos y cuidados que implicá incorporar un animal y está dispuesto a asumirlos?
+            </li>
+            <input type="radio" name="option3" value="Si"> Sí
+            <input type="radio" name="option3" value="No"> No
+            </p>
+
+            <li>
+                <p> ¿Te comprometés a brindarle vacunación anual, desparacitación y castración?
+            </li>
+            <input type="radio" name="option4" value="Si"> Sí
+            <input type="radio" name="option4" value="No"> No
+            </p>
+            <li>
+                <p> ¿Qué tipo de vivienda posee?
+            </li>
+            <input type="radio" name="option5" value="Casa"> Casa
+            <input type="radio" name="option5" value="Departamento"> Departamento
+            </p>
+
+            <li>
+                <p> ¿Posee patio?
+            </li>
+            <input type="radio" name="option6" value="Si"> Sí
+            <input type="radio" name="option6" value="No"> No
+            </p>
+        </ul>
+    </fieldset>
+    <br>
+    <fieldset><br>
+        <label for="comentarios"><b>Comentarios:</b></label><br>
+        <textarea name="comentarios" rows="5" cols="90"></textarea>
+    </fieldset>
+    <br><br>
+    <br>
+    <form action="inicio.html" method="Post" target="_blank"></form>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+
+</html>
