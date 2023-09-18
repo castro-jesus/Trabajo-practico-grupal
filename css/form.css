@@ -1,16 +1,16 @@
 
 form {
      Font-family: Arial, sans-serif;
-    background-color:#d1f0df ;
+    background-color:#FFEADD;
     color: #000000;
 }
 body {
-  background-color:#d1f0df ;
+  background-color:#FFEADD ;
 }
 
 fieldset{
-  background-color: #cef6d4;
-  border: 1px solid #61af8f;
+  background-color: #FFEADD ;
+  border: 1px solid #dc9a71;
   border-radius: 5px;
 }
 input[type="text"],
@@ -19,14 +19,14 @@ input[type="email"]
 {    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #61af8f;
+    border: 1px solid #dc9a71;
     border-radius: 5px;
 }
 textarea {
   width: 95%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #61af8f;
+  border: 1px solid #dc9a71;
   border-radius: 5px;
   resize: vertical; 
 }

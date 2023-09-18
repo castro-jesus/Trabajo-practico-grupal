@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    background-color: #FFEADD;
 }
 
 header {
@@ -35,7 +36,7 @@ li {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #96C7C1;
     color: white;
     border: none;
     padding: 10px 20px;
