@@ -3,16 +3,21 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #FFEADD;
+    align-items: center;
 }
 
+  
 header {
     text-align: center;
     margin-bottom: 20px;
 }
 
+
 .productos {
     display: flex;
     flex-wrap: wrap;
+align-self: start;
+justify-content: center;
 }
 
 .producto {
@@ -20,8 +25,12 @@ header {
     padding: 10px;
     margin: 10px;
     text-align: center;
+    justify-content: center;
+      }
+.producto img{
+    width: 400px;
+    height: 500px;
 }
-
 .carrito {
     margin-top: 50px;
 }

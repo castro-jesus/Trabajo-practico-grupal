@@ -151,6 +151,10 @@ body {
   grid-area: pie;
 }
 
+.redes-sociales img {
+  width: 40px; /* Ajusta el tamaño de los íconos según tus necesidades */
+}
+
 @media (max-width: 768px){  
   ul li{
     width: 100%;
