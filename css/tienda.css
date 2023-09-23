@@ -16,8 +16,13 @@ header {
 .productos {
     display: flex;
     flex-wrap: wrap;
-align-self: start;
+    align-self: start;
 justify-content: center;
+border: 10px;
+}
+td{
+    background-color: #ffffff ;
+    border-radius: 10px;
 }
 
 .producto {
@@ -26,6 +31,7 @@ justify-content: center;
     margin: 10px;
     text-align: center;
     justify-content: center;
+    font-size: large;
       }
 .producto img{
     width: 400px;
@@ -48,7 +54,7 @@ button {
     background-color: #96C7C1;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 30px;
     cursor: pointer;
     font-size: 16px;
 }
