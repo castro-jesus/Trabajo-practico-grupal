@@ -1,13 +1,84 @@
 
 form {
-     Font-family: Arial, sans-serif;
+     Font-family: 'Nunito', sans-serif;
     background-color:#FFEADD;
     color: #000000;
 }
 body {
   background-color:#FFEADD ;
+  font-family: 'Nunito', sans-serif;
 }
 
+
+.contenedor>div,
+.contenedor .encabezado{
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.encabezado .logo img {
+  height: 100px;
+  width: auto;
+  transition: all 0.2s;
+}
+
+/*hace un efecto al logo de movimiento*/
+.encabezado .logo img:hover {
+  transform: scale(1.2);
+}
+
+/*hace que al pasar por el logo aparezca la manito*/
+.encabezado .logo {
+  cursor: pointer;
+}
+
+/*configura el header*/
+.contenedor .encabezado {
+  background: #fff;
+  display: flex;
+  color: black;
+  grid-area: encabezado;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  padding: 5px 1%;
+  font-size: 20px;
+}
+
+.encabezado .animales {
+  height: 100px;
+  width: auto;
+  order: 3;
+  margin-left: auto;
+}
+
+/*se le quita los puntos de lista*/
+.encabezado .menu {
+  list-style: none;
+}
+
+/*hace que al pasar el mouse cambie el tamaño de la tipografia*/
+.encabezado .menu li:hover {
+  transform: scale(1.1);
+}
+
+
+/*hace que a todos lo LI del menu este ordenado en linea horizontal*/
+.encabezado .menu li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+/*hace que a todos los A del menu no tengan el subrayado*/
+.encabezado .menu a {
+  font-size: 700;
+  color: #000;
+  text-decoration: none;
+}
+
+.encabezado .menu li a:hover {
+  color: #FFBB5C;
+}
 fieldset{
   background-color: #FFEADD ;
   border: 1px solid #dc9a71;

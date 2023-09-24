@@ -10,38 +10,23 @@ body {
   background: #FFEADD;
   color: #000;
   font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+  /* Esto establece la altura mínima al 100% de la altura de la ventana del navegador */
+
 }
 
 .contenedor {
-  width: 90%;
-  /*max-width: 1000px; ancho máximo de la página*/
-  margin: 20px auto;
-  /*auto permite centrar nuestra página en forma horizontal*/
-  display: grid;
-  gap: 20px;
-  /*nos ahorramos tenes que poner márgenes entre los elementos*/
-
-  /*3 columnas: contenido (con 2 widgets) + sidebar*/
-  grid-template-columns: repeat(3, 1fr);
-
-  /*4 filas: header, contenido, widgets, footer*/
-  grid-template-rows: repeat(4, auto);
-
-  grid-template-areas: "encabezado encabezado encabezado"
-    "contenido contenido sidebar"
-    "widget-1 widget-2 sidebar"
-    "pie pie pie";
-}
-
-.contenedor>div,
-.contenedor .encabezado,
-.contenedor .contenido,
-.contenedor .sidebar,
-.contenedor .pie {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 4px;
 }
 
+/* Estilos del encabezado */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .encabezado .logo img {
   height: 100px;
   width: auto;
@@ -58,6 +43,7 @@ body {
   cursor: pointer;
 }
 
+
 /*configura el header*/
 .contenedor .encabezado {
   background: #fff;
@@ -71,108 +57,57 @@ body {
   font-size: 20px;
 }
 
-.encabezado .animales{
+.encabezado .animales {
   height: 100px;
   width: auto;
   order: 3;
   margin-left: auto;
 }
-
 /*se le quita los puntos de lista*/
-.encabezado .menu{
+.encabezado .menu {
   list-style: none;
 }
 
 /*hace que al pasar el mouse cambie el tamaño de la tipografia*/
-.encabezado .menu li:hover{
+.encabezado .menu li:hover {
   transform: scale(1.1);
 }
 
 
 /*hace que a todos lo LI del menu este ordenado en linea horizontal*/
-.encabezado .menu li{
+.encabezado .menu li {
   display: inline-block;
   padding: 0 20px;
 }
 
 /*hace que a todos los A del menu no tengan el subrayado*/
-.encabezado .menu a{
+.encabezado .menu a {
   font-size: 700;
   color: #000;
   text-decoration: none;
 }
 
-.encabezado .menu li a:hover{
+.encabezado .menu li a:hover {
   color: #FFBB5C;
 }
 
-.contenedor .contenido {
-  background: #DED9C4;
-  grid-area: contenido;
-  align-items: center;
-  display: flex-center;
-  justify-content: center;
+
+/* Estilos de las noticias */
+.div1, .div2, .div3 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin: 2px;
 }
 
-.contenedor .sidebar {
-  background: #96C7C1;
-  /*utilizamos flexbox para alinear el contenido*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: sidebar;
+.div1 img, .div2 img, .div3 img{
+  max-width: 100%;
 }
 
-.contenedor .widget-1,
-.contenedor .widget-2 {
-  background: #FFBB5C;
-  color: #000;
-  height: 100px;
-  /*utilizamos flexbox para alinear el contenido*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.div1 p, .div2 p, .div3 p{
+  text-align: justify;
 }
 
-.contenedor .widget-1 {
-  grid-area: widget-1;
-}
-
-.contenedor .widget-2 {
-  grid-area: widget-2;
-}
-
-.contenedor .pie {
-  background: #89B5AF;
-  color: #fff;
-  grid-area: pie;
-}
-
-@media (max-width: 768px){  
-  ul li{
-    width: 100%;
-    padding: 16px;
-
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contenedor {
-    grid-template-areas: "encabezado encabezado encabezado encabezado"
-      "contenido contenido contenido"
-      "sidebar sidebar sidebar"
-      "widget-1 widget-1 widget-2"
-      "pie pie pie";
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .contenedor {
-    grid-template-areas: "encabezado encabezado encabezado"
-      "contenido contenido contenido"
-      "widget-1 widget-1 widget-1"
-      "widget-2 widget-2 widget-2"
-      "sidebar sidebar sidebar"
-      "pie pie pie";
-  }
+/* Estilos del pie de página */
+.pie {
+  text-align: center;
 }

@@ -10,8 +10,9 @@ body {
   background: #FFEADD;
   color: #000;
   font-family: 'Nunito', sans-serif;
-  min-height: 100vh; /* Esto establece la altura mínima al 100% de la altura de la ventana del navegador */
-  
+  min-height: 100vh;
+  /* Esto establece la altura mínima al 100% de la altura de la ventana del navegador */
+
 }
 
 .contenedor {
@@ -33,8 +34,21 @@ body {
     "contenido contenido sidebar"
     "widget-1 widget-2 sidebar"
     "pie pie pie";
-    
+
 }
+
+.card {
+  background-color: #afe7e1;
+  display: flex;
+  color: black;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  padding: 10px 1%;
+  font-size: 20px;
+}
+
+
 
 .contenedor>div,
 .contenedor .encabezado,
@@ -74,7 +88,7 @@ body {
   font-size: 20px;
 }
 
-.encabezado .animales{
+.encabezado .animales {
   height: 100px;
   width: auto;
   order: 3;
@@ -82,30 +96,30 @@ body {
 }
 
 /*se le quita los puntos de lista*/
-.encabezado .menu{
+.encabezado .menu {
   list-style: none;
 }
 
 /*hace que al pasar el mouse cambie el tamaño de la tipografia*/
-.encabezado .menu li:hover{
+.encabezado .menu li:hover {
   transform: scale(1.1);
 }
 
 
 /*hace que a todos lo LI del menu este ordenado en linea horizontal*/
-.encabezado .menu li{
+.encabezado .menu li {
   display: inline-block;
   padding: 0 20px;
 }
 
 /*hace que a todos los A del menu no tengan el subrayado*/
-.encabezado .menu a{
+.encabezado .menu a {
   font-size: 700;
   color: #000;
   text-decoration: none;
 }
 
-.encabezado .menu li a:hover{
+.encabezado .menu li a:hover {
   color: #FFBB5C;
 }
 
@@ -121,6 +135,7 @@ body {
   background: #96C7C1;
   /*utilizamos flexbox para alinear el contenido*/
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   grid-area: sidebar;
@@ -152,11 +167,12 @@ body {
 }
 
 .redes-sociales img {
-  width: 40px; /* Ajusta el tamaño de los íconos según tus necesidades */
+  width: 40px;
+  /* Ajusta el tamaño de los íconos según tus necesidades */
 }
 
-@media (max-width: 768px){  
-  ul li{
+@media (max-width: 768px) {
+  ul li {
     width: 100%;
     padding: 16px;
 

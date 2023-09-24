@@ -1,54 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #FFEADD;
-    align-items: center;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #FFEADD;
+  align-items: center;
 }
-
-  
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 
 .productos {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: start;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-self: start;
 justify-content: center;
 border: 10px;
 }
 td{
-    background-color: #ffffff ;
-    border-radius: 10px;
-    
+  background-color: #ffffff ;
+  border-radius: 10px;
+  
 }
 
 .producto {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    justify-content: center;
-    font-size: large;
-      }
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: large;
+    }
 .producto img{
-    width: 400px;
-    height: 500px;
+  width: 400px;
+  height: 500px;
 }
-.carrito {
-    margin-top: 50px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
+.contenedor>div,
+.contenedor .encabezado {
+  padding: 20px;
+  border-radius: 4px;
 }
 
-li {
-    margin-bottom: 10px;
+.encabezado .logo img {
+  height: 100px;
+  width: auto;
+  transition: all 0.2s;
+}
+
+/*hace un efecto al logo de movimiento*/
+.encabezado .logo img:hover {
+  transform: scale(1.2);
+}
+
+/*hace que al pasar por el logo aparezca la manito*/
+.encabezado .logo {
+  cursor: pointer;
+}
+
+/*configura el header*/
+.contenedor .encabezado {
+  background: #fff;
+  display: flex;
+  color: black;
+  grid-area: encabezado;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  padding: 5px 1%;
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.encabezado .animales {
+  height: 100px;
+  width: auto;
+  order: 3;
+  margin-left: auto;
+}
+
+/*se le quita los puntos de lista*/
+.encabezado .menu {
+  list-style: none;
+}
+
+/*hace que al pasar el mouse cambie el tamaño de la tipografia*/
+.encabezado .menu li:hover {
+  transform: scale(1.1);
+}
+
+
+/*hace que a todos lo LI del menu este ordenado en linea horizontal*/
+.encabezado .menu li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+/*hace que a todos los A del menu no tengan el subrayado*/
+.encabezado .menu a {
+  font-size: 700;
+  color: #000;
+  text-decoration: none;
+}
+
+.encabezado .menu li a:hover {
+  color: #FFBB5C;
+}
+
+.contenedor .contenido {
+  background: #DED9C4;
+  grid-area: contenido;
+  align-items: center;
+  display: flex-center;
+  justify-content: center;
+}
+
+.contenedor .sidebar {
+  background: #96C7C1;
+  /*utilizamos flexbox para alinear el contenido*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: sidebar;
 }
 
 button {
