@@ -101,6 +101,9 @@ body {
 
 .div1 img, .div2 img, .div3 img{
   max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .div1 p, .div2 p, .div3 p{
