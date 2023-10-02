@@ -10,6 +10,8 @@ body {
   background: #FFEADD;
   color: #000;
   font-family: 'Nunito', sans-serif;
+  min-height: 100vh; /* Esto establece la altura mínima al 100% de la altura de la ventana del navegador */
+  
 }
 
 .contenedor {
@@ -31,6 +33,7 @@ body {
     "contenido contenido sidebar"
     "widget-1 widget-2 sidebar"
     "pie pie pie";
+    
 }
 
 .contenedor>div,
@@ -146,6 +149,10 @@ body {
   background: #89B5AF;
   color: #fff;
   grid-area: pie;
+}
+
+.redes-sociales img {
+  width: 40px; /* Ajusta el tamaño de los íconos según tus necesidades */
 }
 
 @media (max-width: 768px){  
