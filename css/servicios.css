@@ -82,7 +82,7 @@ body {
 
 /*hace que a todos los A del menu no tengan el subrayado*/
 .encabezado .menu a {
-  font-size: 700;
+  font-size: 2vw;
   color: #000;
   text-decoration: none;
 }

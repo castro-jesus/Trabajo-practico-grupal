@@ -21,6 +21,7 @@ body {
   margin: 20px auto;
   /*auto permite centrar nuestra página en forma horizontal*/
   display: grid;
+  justify-content: space-between;
   gap: 20px;
   /*nos ahorramos tenes que poner márgenes entre los elementos*/
 
@@ -115,7 +116,7 @@ body {
 
 /*hace que a todos los A del menu no tengan el subrayado*/
 .encabezado .menu a {
-  font-size: 700;
+  font-size: 2vw;
   color: #000;
   text-decoration: none;
 }
@@ -187,6 +188,7 @@ body {
       "sidebar sidebar sidebar"
       "widget-1 widget-1 widget-2"
       "pie pie pie";
+    flex-direction: column;
   }
 }
 
