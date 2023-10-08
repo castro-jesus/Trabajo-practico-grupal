@@ -21,10 +21,16 @@ body {
 justify-content: center;
 border: 10px;
 }
-td{
+table{
+border-collapse: separate;
+border-spacing: 30px;
+}
+
+td, th{
   background-color: #ffffff ;
-  border-radius: 10px;
-  
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
 .producto {
@@ -35,6 +41,7 @@ td{
   justify-content: center;
   font-size: large;
     }
+
 .producto img{
   width: 400px;
   height: 500px;
