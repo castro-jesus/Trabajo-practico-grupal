@@ -16,51 +16,17 @@ body {
 }
 
 .contenedor {
-  width: 90%;
-  /*max-width: 1000px; ancho máximo de la página*/
-  margin: 20px auto;
-  /*auto permite centrar nuestra página en forma horizontal*/
-  display: grid;
-  justify-content: space-between;
-  gap: 20px;
-  /*nos ahorramos tenes que poner márgenes entre los elementos*/
-
-  /*3 columnas: contenido (con 2 widgets) + sidebar*/
-  grid-template-columns: repeat(3, 1fr);
-
-  /*4 filas: header, contenido, widgets, footer*/
-  grid-template-rows: repeat(4, auto);
-
-  grid-template-areas: "encabezado encabezado encabezado"
-    "contenido contenido sidebar"
-    "widget-1 widget-2 sidebar"
-    "pie pie pie";
-
-}
-
-.card {
-  background-color: #afe7e1;
-  display: flex;
-  color: black;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100px;
-  padding: 10px 1%;
-  font-size: 20px;
-
-}
-
-
-
-.contenedor>div,
-.contenedor .encabezado,
-.contenedor .contenido,
-.contenedor .sidebar,
-.contenedor .pie {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 4px;
 }
 
+/* Estilos del encabezado */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .encabezado .logo img {
   height: 100px;
   width: auto;
@@ -76,6 +42,7 @@ body {
 .encabezado .logo {
   cursor: pointer;
 }
+
 
 /*configura el header*/
 .contenedor .encabezado {
@@ -96,7 +63,6 @@ body {
   order: 3;
   margin-left: auto;
 }
-
 /*se le quita los puntos de lista*/
 .encabezado .menu {
   list-style: none;
@@ -116,7 +82,7 @@ body {
 
 /*hace que a todos los A del menu no tengan el subrayado*/
 .encabezado .menu a {
-  font-size: 2vw;
+  font-size: 700;
   color: #000;
   text-decoration: none;
 }
@@ -125,13 +91,6 @@ body {
   color: #FFBB5C;
 }
 
-.contenedor .contenido {
-  background: #DED9C4;
-  grid-area: contenido;
-  align-items: center;
-  display: flex-center;
-  justify-content: center;
-}
 
 /* Estilos de las noticias */
 .div1, .div2, .div3 {
