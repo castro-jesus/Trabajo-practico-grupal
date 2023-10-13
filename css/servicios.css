@@ -16,7 +16,7 @@ body {
 }
 
 .contenedor {
-  max-width: 1200px;
+  max-width: 95%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -52,13 +52,13 @@ body {
   grid-area: encabezado;
   justify-content: flex-start;
   align-items: center;
-  height: 100px;
+  height: 50%;
   padding: 5px 1%;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .encabezado .animales {
-  height: 100px;
+  height: 50%;
   width: auto;
   order: 3;
   margin-left: auto;
@@ -104,8 +104,8 @@ body {
 }
 
 .div1 img, .div2 img, .div3 img{
-  max-width: 95%;
-  height: auto;
+  max-width: 20%;
+  max-height: 20%;
   display: block;
   margin: 10px;
   float: left;

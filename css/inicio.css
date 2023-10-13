@@ -61,6 +61,13 @@ body {
   border-radius: 4px;
 }
 
+
+/* Estilos del encabezado */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .encabezado .logo img {
   height: 100px;
   width: auto;
@@ -77,6 +84,7 @@ body {
   cursor: pointer;
 }
 
+
 /*configura el header*/
 .contenedor .encabezado {
   background: #fff;
@@ -85,18 +93,17 @@ body {
   grid-area: encabezado;
   justify-content: flex-start;
   align-items: center;
-  height: 100px;
+  height: 50%;
   padding: 5px 1%;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .encabezado .animales {
-  height: 100px;
+  height: 50%;
   width: auto;
   order: 3;
   margin-left: auto;
 }
-
 /*se le quita los puntos de lista*/
 .encabezado .menu {
   list-style: none;
@@ -116,7 +123,7 @@ body {
 
 /*hace que a todos los A del menu no tengan el subrayado*/
 .encabezado .menu a {
-  font-size: 2vw;
+  font-size: 700;
   color: #000;
   text-decoration: none;
 }
@@ -124,6 +131,7 @@ body {
 .encabezado .menu li a:hover {
   color: #FFBB5C;
 }
+
 
 .contenedor .contenido {
   background: #DED9C4;
