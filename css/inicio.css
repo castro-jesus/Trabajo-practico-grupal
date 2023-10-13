@@ -44,13 +44,12 @@ body {
   color: black;
   justify-content: flex-start;
   align-items: center;
-  height: 100px;
+  height: auto;
   padding: 10px 1%;
-  font-size: 20px;
-
+  font-size: 1.5vw;
+  border: 1px solid black;
+  border-radius: 5px;
 }
-
-
 
 .contenedor>div,
 .contenedor .encabezado,
@@ -142,7 +141,7 @@ body {
 }
 
 .contenedor .sidebar {
-  background: #96C7C1;
+  background: #afe7e1;
   /*utilizamos flexbox para alinear el contenido*/
   display: flex;
   flex-direction: column;
@@ -155,11 +154,12 @@ body {
 .contenedor .widget-2 {
   background: #FFBB5C;
   color: #000;
-  height: 100px;
+  height: auto;
   /*utilizamos flexbox para alinear el contenido*/
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .contenedor .widget-1 {
@@ -170,16 +170,21 @@ body {
   grid-area: widget-2;
 }
 
-.contenedor .pie {
+.contenedor .redes-sociales {
   background: #89B5AF;
   color: #fff;
   grid-area: pie;
+  max-width: 100%;
+  max-height: auto;
+  text-align: left; 
+  padding: 10px; 
+  bottom: 0;
 }
+
 
 .redes-sociales img {
   width: 40px;
-  /* Ajusta el tamaño de los íconos según tus necesidades */
-}
+  }
 
 @media (max-width: 768px) {
   ul li {
