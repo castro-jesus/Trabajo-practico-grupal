@@ -119,3 +119,30 @@ body {
 .pie {
   text-align: center;
 }
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marcas{
+    background: #89B5AF;
+    color: #fff;
+    max-width: 100%;
+    max-height: auto;
+    text-align: left; 
+    padding: 10px; 
+    animation: desplazamiento 10s linear infinite ;
+     }
+
+.imagen {
+ max-width: 12vw;
+ max-height: auto;
+display: inline-block;
+margin: 10px;
+}
+  
+  
