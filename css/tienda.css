@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Roboto&display=swap');
-
+@media screen and (min-width: 768px) {
 * {
   margin: 0;
   padding: 0;
@@ -153,4 +153,150 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+}
+@media screen and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #FFEADD;
+    align-items: center;
+  }
+  
+  .productos {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-self: start;
+  justify-content: center;
+  border: 10px;
+  }
+  table{
+  border-collapse: separate;
+  border-spacing: 30px;
+  }
+  
+  td, th{
+    background-color: #ffffff ;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+      }
+  
+  .producto img{
+    width: 100%;
+    height: auto;
+  }
+  .contenedor>div,
+  .contenedor .encabezado {
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  
+  /* Estilos del encabezado */
+  .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .encabezado .animales,
+  .encabezado .logo img {
+    height: 70px; /* Ajustar según sea necesario */
+    width: auto;
+  }
+  
+  /*configura el header*/
+  .contenedor .encabezado {
+    background: #fff;
+    display: flex;
+    color: black;
+    grid-area: encabezado;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50%;
+    padding: 5px 1%;
+    font-size: 2vw;
+  }
+  
+  .encabezado .animales {
+    height: 50%;
+    width: auto;
+    order: 3;
+    margin-left: auto;
+  }
+  /*se le quita los puntos de lista*/
+  .encabezado .menu {
+    list-style: none;
+  }
+  
+  /*hace que al pasar el mouse cambie el tamaño de la tipografia*/
+  .encabezado .menu li:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  /*hace que a todos lo LI del menu este ordenado en linea horizontal*/
+  .encabezado .menu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  /*hace que a todos los A del menu no tengan el subrayado*/
+  .encabezado .menu a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .encabezado .menu li a:hover {
+    color: #FFBB5C;
+  }
+  
+  
+  .contenedor .contenido {
+    background: #DED9C4;
+    grid-area: contenido;
+    align-items: center;
+    display: flex-center;
+    justify-content: center;
+  }
+  
+  .contenedor .sidebar {
+    background: #96C7C1;
+    /*utilizamos flexbox para alinear el contenido*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: sidebar;
+  }
+  
+  button {
+      background-color: #96C7C1;
+      color: white;
+      border: none;
+      padding: 20px 30px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+  
+  button:hover {
+      background-color: #45a049;
+  }
 }
