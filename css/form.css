@@ -1,8 +1,11 @@
 
-form {
+.form {
      Font-family: 'Nunito', sans-serif;
     background-color:#FFEADD;
     color: #000000;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
 }
 body {
   background-color:#FFEADD ;
@@ -108,4 +111,9 @@ textarea {
         border: none;
         border-radius: 5px;
         cursor: pointer;
+    }
+    .form .errors {
+      color: red;
+      list-style-type: none;
+      margin-bottom: 20px;
     }
