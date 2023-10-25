@@ -10,8 +10,9 @@ body {
   background: #FFEADD;
   color: #000;
   font-family: 'Nunito', sans-serif;
-  min-height: 100vh; /* Esto establece la altura mínima al 100% de la altura de la ventana del navegador */
-  
+  min-height: 100vh;
+  /* Esto establece la altura mínima al 100% de la altura de la ventana del navegador */
+
 }
 
 .contenedor {
@@ -20,6 +21,7 @@ body {
   margin: 20px auto;
   /*auto permite centrar nuestra página en forma horizontal*/
   display: grid;
+  justify-content: space-between;
   gap: 20px;
   /*nos ahorramos tenes que poner márgenes entre los elementos*/
 
@@ -33,8 +35,22 @@ body {
     "contenido contenido sidebar"
     "widget-1 widget-2 sidebar"
     "pie pie pie";
-    
+
 }
+
+.card {
+  background-color: #afe7e1;
+  display: flex;
+  color: black;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  padding: 15px 1%;
+  font-size: 1.5vw;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 
 .contenedor>div,
 .contenedor .encabezado,
@@ -45,6 +61,13 @@ body {
   border-radius: 4px;
 }
 
+
+/* Estilos del encabezado */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .encabezado .logo img {
   height: 100px;
   width: auto;
@@ -61,6 +84,7 @@ body {
   cursor: pointer;
 }
 
+
 /*configura el header*/
 .contenedor .encabezado {
   background: #fff;
@@ -69,45 +93,45 @@ body {
   grid-area: encabezado;
   justify-content: flex-start;
   align-items: center;
-  height: 100px;
+  height: 50%;
   padding: 5px 1%;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
-.encabezado .animales{
-  height: 100px;
+.encabezado .animales {
+  height: 50%;
   width: auto;
   order: 3;
   margin-left: auto;
 }
-
 /*se le quita los puntos de lista*/
-.encabezado .menu{
+.encabezado .menu {
   list-style: none;
 }
 
 /*hace que al pasar el mouse cambie el tamaño de la tipografia*/
-.encabezado .menu li:hover{
+.encabezado .menu li:hover {
   transform: scale(1.1);
 }
 
 
 /*hace que a todos lo LI del menu este ordenado en linea horizontal*/
-.encabezado .menu li{
+.encabezado .menu li {
   display: inline-block;
   padding: 0 20px;
 }
 
 /*hace que a todos los A del menu no tengan el subrayado*/
-.encabezado .menu a{
+.encabezado .menu a {
   font-size: 700;
   color: #000;
   text-decoration: none;
 }
 
-.encabezado .menu li a:hover{
+.encabezado .menu li a:hover {
   color: #FFBB5C;
 }
+
 
 .contenedor .contenido {
   background: #DED9C4;
@@ -118,9 +142,10 @@ body {
 }
 
 .contenedor .sidebar {
-  background: #96C7C1;
+  background: #afe7e1;
   /*utilizamos flexbox para alinear el contenido*/
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   grid-area: sidebar;
@@ -130,11 +155,14 @@ body {
 .contenedor .widget-2 {
   background: #FFBB5C;
   color: #000;
-  height: 100px;
+  height: auto;
   /*utilizamos flexbox para alinear el contenido*/
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .contenedor .widget-1 {
@@ -145,18 +173,24 @@ body {
   grid-area: widget-2;
 }
 
-.contenedor .pie {
+.contenedor .redes-sociales {
   background: #89B5AF;
   color: #fff;
   grid-area: pie;
+  max-width: 100%;
+  max-height: auto;
+  text-align: left; 
+  padding: 10px; 
+  bottom: 0;
 }
+
 
 .redes-sociales img {
-  width: 40px; /* Ajusta el tamaño de los íconos según tus necesidades */
-}
+  width: 40px;
+  }
 
-@media (max-width: 768px){  
-  ul li{
+@media (max-width: 768px) {
+  ul li {
     width: 100%;
     padding: 16px;
 
@@ -170,6 +204,7 @@ body {
       "sidebar sidebar sidebar"
       "widget-1 widget-1 widget-2"
       "pie pie pie";
+    flex-direction: column;
   }
 }
 

@@ -1,112 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/form.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/form.css">
 
+        <link rel="icon" href="imagenes/logo mundo pets.png">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="/imagenes/logomundopets.ico">
+        <title>Mundo Pets</title>
+    </head>
 
-    <title>Formulario</title>
-</head>
-<h1>Formulario de Adopción</h1>
-</head>
-<form>
-    <fieldset>
-        <h2><b>Información personal</b> </h2>
-        <label for="firstname">Nombre: </label>
-        <input size="30" type="text" id="name" name="firstname" placeholder="Ingrese su nombre aqui...">
-        <br>
-        <label for="lastname">Apellido:</label>
-        <input size="30" type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido aqui...">
-        <br>
-        <label for="street">Direccion:</label>
-        <input type="text" id="street" name="address" placeholder="Ingrese su dirección aqui...">
-        <br>
-        <label for="city">Ciudad:</label><br>
-        <input type="text" id="city" name="city" placeholder="Ingrese su ciudad aqui...">
-        <br>
-        <label for="phone">Telefono: </label>
-        <input type="tel" id="phone" name="phone" placeholder="Ingrese su teléfono aqui ....">
-        <br>
-        <label for="email">Correo electrónico: </label>
-        <input type="email" id="email" name="email" placeholder="Ingrese su correo aqui ....">
-        <br><br>
-    </fieldset>
-    <br>
-    <fieldset>
+    <body>
+        <div class="contenedor">
+            <header class="encabezado">
+                <div class="logo">
+                    <img src="imagenes/logo mundo pets.png" href="index.html"
+                        width="180" alt="logo">
+  </div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contact</a></li>
+                        <li><a href="form.html">Formulario de adopción</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <h2><b>Cuestionario</b></h2>
-        <ul>
-            <li>
-                <p><label for="pregunta1">¿Qué tipo de animal querés adoptar?:</label>
-            </li>
-            <input size="20" type="text" name="pregunta1">
-            </p>
-            <li><label for="pregunta2">¿El animal que va a adoptar es para usted o para un tercero?</label></li>
-            <br> <textarea name="pregunta2" rows="3" cols="90"></textarea>
-            <br>
-            <li>
-                <p><label for="pregunta3">¿Cuántas personas habitan en el hogar? ¿Cuáles son sus edades? ¿ Cual es su
-                        parentesco / vinculo ?</label>
-            </li>
-            <textarea name="pregunta3" rows="3" cols="90"></textarea>
-            </p>
-            <li>
-                <p> ¿Están todos los miembros de la familia de acuerdo en adoptar?
-            </li>
-            <input type="radio" name="option1" value="Si"> Sí
-            <input type="radio" name="option1" value="No"> No
-            </p>
+            <main class="contenido">
+                <div class="container">
+                    <form class="form" class="form" id="form">
+                        <h2>Datos Personales:</h2>
+                        <div>
+                            <label for="Nombre">Nombre:
+                                <input type="text" name="nombre" id="nombre"
+                                    placeholder="Ingrese nombre..">
+                            </label>
+                            <label for="Apellido">Apellido:
+                                <input type="text" name="apellido" id="apellido"
+                                    placeholder="Ingrese apellido..">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="Direccion">Direccion:
+                                <input type="text" name="direccion"
+                                    id="direccion"
+                                    placeholder="Ingrese una direccion..">
+                            </label>
+                        </div>
+                        <br>
+                            <div>
+                            <label for="Ciudad">Ciudad:
+                                <input type="text" name="ciudad" id="ciudad"
+                                    placeholder="Ingrese su ciudad..">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="Telefono">Telefono:
+                                <input type="text" name="telefono" id="telefono"
+                                    placeholder="Ingrese un numero de telefono..">
+                            </label>
+                            <label for>Correo:
+                                <input type="text" name="correo" id="correo"
+                                    placeholder="Ingrese un correo..">
+                            </label>
+                        </div>
+                        <div>
+                            <h2>Cuestionario: </h2>
+                            <label for="pregunta1">
+                                <p>¿Que tipo de animal desea adoptar?</p>
+                                <input type="text" name="pregunta1"
+                                    id="pregunta1">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="pregunta2">
+                                <p>¿El animal desea adoptar es para usted o un
+                                    tercero?</p>
+                                <textarea name="pregunta2" id="pregunta2"
+                                    rows="3"
+                                    cols="90"></textarea>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="pregunta3">
+                                <p>¿Cuántas personas habitan en el hogar?
+                                    ¿Cuáles son
+                                    sus edades? ¿ Cual es su parentesco /
+                                    vinculo ?</p>
+                                <textarea name="pregunta3" id="pregunta3"
+                                    rows="3"
+                                    cols="90"></textarea>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="familia">
+                                <p>¿Están todos los miembros de la familia de
+                                    acuerdo en
+                                    adoptar?</p>
+                                <input type="radio" name="familia"><label
+                                    for="familia">SI</label>
+                                <input type="radio" name="familia"><label
+                                    for="familia">NO</label>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="cantidad">
+                                <p>¿Hay otros animales en la casa?</p>
+                                <input type="radio" name="cantidad"><label
+                                    for="cantidad">SI</label>
+                                <input type="radio" name="cantidad"><label
+                                    for="cantidad">NO</label>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="especificar">
+                                <p>En caso de respuesta afirmativa especificar:</p>
+                                <input type="text" name="especificar"
+                                    id="especificar">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="gastos">
+                                <p>¿Conoce los gastos y cuidados que implicá
+                                    incorporar
+                                    un animal y está dispuesto a asumirlos?</p>
+                                <input type="radio" name="gastos"><label
+                                    for="gastos">SI</label>
+                                <input type="radio" name="gastos"><label
+                                    for="gastos">NO</label>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="vacunas">
+                                <p>¿Te comprometés a brindarle vacunación anual,
+                                    desparacitación y castración?</p>
+                                <input type="radio" name="vacuna"><label
+                                    for="vacuna">SI</label>
+                                <input type="radio" name="vacuna"><label
+                                    for="vacuna">NO</label>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="vivienda">
+                                <p>¿Qué tipo de vivienda posee?</p>
+                                <input type="radio" name="vivienda"><label
+                                    for="gastos">CASA</label>
+                                <input type="radio" name="vivienda"><label
+                                    for="gastos">DEPARTAMENTO</label>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="patio">
+                                <p>¿Posee patio?</p>
+                                <input type="radio" name="patio"><label
+                                    for="patio">SI</label>
+                                <input type="radio" name="patio"><label
+                                    for="patio">NO</label>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="comentario">
+                                <h2>Comentario:</h2>
+                                <textarea name="comentario" id="comentario"
+                                    rows="3"
+                                    cols="90"></textarea>
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-radio">
+                            <input type="checkbox" name="terminos"><label
+                                for="terminos">Acepta
+                                los terminos y condiciones</label>
+                        </div>
+                        <ul class="errors"></ul>
+                        <div>
+                        <input type="submit" value="ENVIAR" id="registro">
+                       <br>
+                       <br>
+                        <a href="index.html">VOLVER</a>
+                    </div>
+                    </form>
+                </div>
+                <script src="js/script.js"></script>
+            </main>
 
-            <li>
-                <p> ¿Hay otros animales en la casa?
-            </li>
-            <input type="radio" name="option2" value="Si"> Sí
-            <input type="radio" name="option2" value="No"> No
-            </p>
+            <br><br>
+            <hr>
 
-            <li><label for="tipodemascota">En caso de respuesta afirmativa especificar: </label></li>
-            <input size="60" type="text" name="tipodemascota">
-
-            <li>
-                <p>¿Conoce los gastos y cuidados que implicá incorporar un animal y está dispuesto a asumirlos?
-            </li>
-            <input type="radio" name="option3" value="Si"> Sí
-            <input type="radio" name="option3" value="No"> No
-            </p>
-
-            <li>
-                <p> ¿Te comprometés a brindarle vacunación anual, desparacitación y castración?
-            </li>
-            <input type="radio" name="option4" value="Si"> Sí
-            <input type="radio" name="option4" value="No"> No
-            </p>
-            <li>
-                <p> ¿Qué tipo de vivienda posee?
-            </li>
-            <input type="radio" name="option5" value="Casa"> Casa
-            <input type="radio" name="option5" value="Departamento"> Departamento
-            </p>
-
-            <li>
-                <p> ¿Posee patio?
-            </li>
-            <input type="radio" name="option6" value="Si"> Sí
-            <input type="radio" name="option6" value="No"> No
-            </p>
-        </ul>
-    </fieldset>
-    <br>
-    <fieldset><br>
-        <label for="comentarios"><b>Comentarios:</b></label><br>
-        <textarea name="comentarios" rows="5" cols="90"></textarea>
-    </fieldset>
-    <br><br>
-    <br>
-    <form action="index.html" method="Post" target="_blank"></form>
-    <input type="submit" value="Enviar">
-</form>
-</body>
+        </main>
+    </body>
 
 </html>
