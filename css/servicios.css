@@ -107,7 +107,7 @@ body {
   max-width: 20%;
   max-height: 20%;
   display: block;
-  margin: 10px 10px;
+  margin: 10px 15px;
   float:inline-start
 
 }
@@ -130,7 +130,7 @@ body {
 }
 
 .img{
-  margin: 10px 5px;
+  margin: 10px 15px;
 }
 
 .marcas{
