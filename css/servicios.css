@@ -107,8 +107,9 @@ body {
   max-width: 20%;
   max-height: 20%;
   display: block;
-  margin: 10px;
-  float: left;
+  margin: 10px auto;
+  float:inline-start
+
 }
 
 .div1 p, .div2 p, .div3 p{
