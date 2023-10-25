@@ -107,11 +107,8 @@ body {
   max-width: 20%;
   max-height: 20%;
   display: block;
-<<<<<<< HEAD
-  margin: 20px ;
-=======
-  margin: 10px 15px;
->>>>>>> 3f8ed9d2a3665f9f76c75f1f419960722c039ceb
+ margin: 20px ;
+
   float:inline-start
 
 }
