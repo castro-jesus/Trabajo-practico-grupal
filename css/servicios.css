@@ -94,7 +94,7 @@ body {
 
 /* Estilos de las noticias */
 .div1, .div2, .div3 {
-  text-align: center;
+  text-align:left;
   margin-bottom: 30px;
   margin: 10px;
   border: 2px solid ;
