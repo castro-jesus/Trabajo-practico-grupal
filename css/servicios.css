@@ -129,6 +129,10 @@ body {
   }
 }
 
+.img{
+  margin: 10px 5px;
+}
+
 .marcas{
     background: #89B5AF;
     color: #fff;
