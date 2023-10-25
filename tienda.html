@@ -32,16 +32,7 @@
 
 <body>
     <header>
-<div class="marcas">
-     <img class="imagen" src="imagenes/logo1.png" alt="logo1">
-        <img class="imagen" src="imagenes/logo2.png" alt="logo2">
-        <img class="imagen" src="imagenes/logo3.png" alt="logo3">
-        <img class="imagen" src="imagenes/logo4.png" alt="logo4">
-        <img class="imagen" src="imagenes/logo5.png" alt="logo5">
-        <img class="imagen" src="imagenes/logo6.png" alt="logo6">
-        <img class="imagen" src="imagenes/logo7.png" alt="logo7">
-</div>
-           
+         
         <br>
         <h1>Tienda de Alimentos</h1>
     <br>
@@ -51,19 +42,19 @@
             <td class="producto">
                 <img src="imagenes/producto1.png" alt="Producto 1">
                 <h2>Alimento Para Perros Pollo Carnes Cereales Y Arroz Raza 15 Kg</h2>
-                <p>Precio: $7.000</p>
+                <p precio="7000"> Precio: $7.000</p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
             <td class="producto">
                 <img src="imagenes/producto2.png" alt="Producto 2">
                 <h2>Alimento Para Perros Adultos Raza Pequena Etapa 2 Pedigree 1.5 Kg</h2>
-                <p>Precio: $1.100</p>
+                <p precio="1100">Precio: $1.100</p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
             <td class="producto">
                 <img src="imagenes/producto3.png" alt="Producto 3">
                 <h2>Alimento Para Perrocachorro Etapa 1 Pedigree 3 Kg</h2>
-                <p>Precio: $2.300</p>
+                <p precio="2300">Precio: $2.300</p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
     </tr>
@@ -71,20 +62,20 @@
                  <td class="producto">
                 <img src="imagenes/producto4.png" alt="Producto 4">
                 <h2>Alimento Maintenance Criadores Perro Adulto X 22 Kg</h2>
-                <p>Precio: $15.270</p>
+                <p precio="15270">Precio: $15.270</p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
             <td class="producto">
                 <img src="imagenes/producto5.png" alt="Producto 5">
                 <h2>Sieger Alimento para Perro Cachorro Mordida Pequeña | 3kg</h2>
-                <p>Precio: $6.705</p>
+                <p precio="6705">Precio: $6.705</p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
             
             <td class="producto">
                 <img src="imagenes/producto6.png" alt="Producto 6">
                 <h2>Alimento Para Perros Barrita Carne Raza 30 Gr</h2>
-                <p>Precio: $250</p>
+                <p precio="250">Precio = $250</p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
         </tr>
@@ -92,19 +83,19 @@
             <td class="producto">
                 <img src="imagenes/producto7.png" alt="Producto 7">
                 <h2>Alimento Dog Chow Para Perros Adultos, Minis Y Pequeños Sabor Carne Y Pollo 1,5kg</h2>
-                <p>Precio: $1.283</p>
+                <p precio="1283">Precio: $1.283</p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
             <td class="producto">
                 <img src="imagenes/producto8.png" alt="Producto 8">
                 <h2>Alimento Para Perros En Sobre Pollo Adulto Pedigree 100 Gr</h2>
-                <p>Precio: $180</p>
+                <p precio="180">Precio: $180</p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
             <td class="producto">
                 <img src="imagenes/producto9.png" alt="Producto 9">
                 <h2>Alimento Para Perro Adulto Nutrique Toy & Mini Young x3kg</h2>
-                <p>Precio: $6.753</p>
+                <p precio="6753">Precio: $6.753</p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
         </tr>
@@ -112,21 +103,21 @@
             <td class="producto">
                 <img src="imagenes/producto10.png" alt="Producto 10">
                 <h2>Alimento Premium para perros adulto Advance Bio x 20 kgrs</h2>
-                <p>Precio: $14.340
+                <p precio="14340">Precio: $14.340
                 </p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
             <td class="producto">
                 <img src="imagenes/producto11.png" alt="Producto 11">
                 <h2>Alimento para perros Dogui adultos todos los tamaños 3kgs</h2>
-                <p>Precio: $1.612
+                <p precio="1612">Precio: $1.612
                 </p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
             <td class="producto">
                 <img src="imagenes/producto12.png" alt="Producto 12">
                 <h2>Alimento Dog Selection Criadores para perro cachorro todos los tamaños sabor mix en bolsa de 21 kg</h2>
-                <p>Precio: $18.305
+                <p precio="18305">Precio: $18.305
                 </p>
                 <button class="agregar">Agregar al Carrito</button>
             </td>
@@ -136,8 +127,10 @@
     <div id="carrito">
         <h2>Carrito de Compras</h2>
         <ul id="carrito-lista"></ul>
-        <p>Total: $<span id="total">0</span></p>
+        <p><h1>Total: $<span id="total">0.00</span></h1> </p>
+        <button id="finalizarCompra">Finalizar Compra</button>
     </div>
+    <script src="js/tienda.js"></script>
 
   </body>
 </html>
