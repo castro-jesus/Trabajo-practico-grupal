@@ -187,6 +187,7 @@ body {
 
 .redes-sociales img {
   width: 40px;
+  margin: 10px 10px;
   }
 
 @media (max-width: 768px) {
